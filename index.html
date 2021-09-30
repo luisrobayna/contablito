@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="main.js"></script>
+    <title>Contablito</title>
+    <script src="styles.css"></script>
 </head>
 
 <body>
+    <h1>Barraca Ladrillos SRl</h1>
 
     <form action="#">
-        <p>Hola soy un cambio </p>
-        <label for="idProduct">ID del producto:</label>
-        <input type="text" name="idProduct"><br>
+        <h2>Registro de productos:</h2>
+        <label for="identificación">ID del producto: </label>
+        <input type="text" name="identificación"><br>
 
-        <label for="nombre">Nombre del producto</label>
+        <label for="nombre">Nombre del producto: </label>
         <input type="text" name="nombre"><br>
 
 
-        <label for="descripcion">Descripciòn del producto</label>
-        <input type="text" name="descripcion"><br>
+        <label for="descripción">Descripción del producto</label>
+        <input type="text" name="descripción"><br>
 
-        <label for="stock">Stock</label>
-        <input type="" name="stock"><br>
+        <label for="cantidad_en_stock">cantidad en stock: </label>
+        <input type="" name="cantidad_en_stock"><br>
 
         <label for="precioProduct">Precio del producto</label>
-        <input type="text" name="precioProduct"><br>
+        <input type="text" name="costo_asociado_al_producto"><br>
 
         <h2>Movimientos del producto</h2>
 
-        <label for="transaccion">Transacción</label>
-        <input type="radio" name="transaccion" value="compra">
+
+        <label for="tipo_de_transacción">Transacción</label>
+        <input type="radio" name="tipo_de_transacción" value="compra">
         <label for="compra">Compra</label>
-        <input type="radio" name="transaccion" value="venta">
+        <input type="radio" name="tipo_de_transacción" value="venta">
         <label for="venta">Venta</label><br>
 
-        <label for="fechaTransaccion">Fecha de transaccion</label>
-        <input type="text"><br>
 
-        <label for="nombreProducto">Nombre producto</label>
-        <input type="text"><br>
+        <label for="fecha_de_la_transacción">Fecha de transacción:</label>
+        <input type="text" name="fecha_de_la_transacción"><br>
 
-        <label for="cantProduct">Cantidad de producto</label>
-        <input type="number"><br>
+        <label for="producto">Nombre producto:</label>
+        <input type="text" name="producto"><br>
 
-        <label for="costUnit">Costo unitario</label>
-        <input type="text"><br>
+        <label for="cantidad_del_producto">Cantidad de producto:</label>
+        <input type="number" name="cantidad_del_producto"><br>
 
-        <label for="subtotal">Subtotal($)</label>
-        <input type="text"><br>
+        <label for="costo_unitario_del_producto">Costo unitario</label>
+        <input type="text" name="costo_unitario_del_producto"><br>
 
-        <label for="iva">Tipo de IVA</label>
-        <input type="radio" name="iva" value="basico">
-        <label for=""></label>
+        <label for="subtotal">Subtotal (en $)</label>
+        <input type="text" name="subtotal"><br>
+
+        <label for="IVA">IVA (en $)</label>
+        <input type="number" name="IVA" value="basico"><br>
+
+
+        <label for="Total">Total de la transacción (en $):  </label>
+        <input type="number" name="Total" value="basico"> <br>
         <input type="submit">
 
 
