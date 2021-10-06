@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contablito</title>
-    <script src="styles.css"></script>
+
+    <link href="stylesLu.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Barraca Ladrillos SRl</h1>
-
-    <form action="#">
+    <form action="#" method="post" ID=form>
+        <h1>Barraca Ladrillos SRL</h1>
+        <div class="container">
+            <img src="contablito imag.jpg">
+        </div>
         <h2>Registro de productos:</h2>
         <label for="identificación">ID del producto: </label>
         <input type="text" name="identificación"><br>
@@ -33,14 +36,17 @@
         <label for="precioProduct">Precio del producto</label>
         <input type="text" name="costo_asociado_al_producto"><br>
 
-        <h2>Movimientos del producto</h2>
+        <h2>Movimientos del producto: </h2>
 
 
-        <label for="tipo_de_transacción">Transacción</label>
-        <input type="radio" name="tipo_de_transacción" value="compra">
-        <label for="compra">Compra</label>
-        <input type="radio" name="tipo_de_transacción" value="venta">
-        <label for="venta">Venta</label><br>
+        <div class="form-field">
+
+            <label for="tipo_de_transacción">Transacción</label>
+            <input type="radio" name="tipo_de_transacción" value="compra">
+            <label for="compra">Compra</label>
+            <input type="radio" name="tipo_de_transacción" value="venta">
+        </div>
+        <h3> <label for="venta">Venta</label><br></h3>
 
 
         <label for="fecha_de_la_transacción">Fecha de transacción:</label>
@@ -64,7 +70,8 @@
 
         <label for="Total">Total de la transacción (en $):  </label>
         <input type="number" name="Total" value="basico"> <br>
-        <input type="submit">
+        <input type="submit" class="btn">
+
 
 
 
